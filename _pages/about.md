@@ -8,10 +8,10 @@ profile:
   align: right
   image: png/logo_gisteiz_square.png
   image_circular: false # crops the image to make it circular
-  more_info: >
-    <p></p>
-    <p></p>
-    <p></p>
+  more_info: #>
+    #<p></p>
+    #<p></p>
+    #<p></p>
 
 news: true # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
