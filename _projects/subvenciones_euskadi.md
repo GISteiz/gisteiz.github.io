@@ -17,8 +17,4 @@ related_publications: false
     <a href="https://gisteiz.github.io/subvenciones-euskadi/" target="_blank">Enlace al visor de datos</a>
 </div>
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        Fuente de datos: <a href="https://opendata.euskadi.eus/api-granted-benefits/?api=granted-benefit/" target="_blank">Open Data Euskadi</a>
-    </div>
-</div>
+Fuente de datos: <a href="https://opendata.euskadi.eus/api-granted-benefits/?api=granted-benefit/" target="_blank">Open Data Euskadi</a>
