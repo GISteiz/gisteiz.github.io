@@ -39,7 +39,6 @@
       - [Code quality checks](#code-quality-checks)
   - [License](#license)
 
-
 ## Features
 
 ### Light/Dark Mode
