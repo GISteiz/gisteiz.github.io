@@ -1,8 +1,6 @@
 github_users:
-  - mmoreno-cart
-  - gisteiz
 
-repo_description_lines_max: 2
+repo_description_lines_max: 0 # 2
 
 github_repos:
   - gisteiz/subvenciones-euskadi
