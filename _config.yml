@@ -80,7 +80,7 @@ discord_id: # your discord id (18-digit unique numerical identifier)
 facebook_id: # your facebook id
 flickr_id: # your flickr id
 github_username: gisteiz # your GitHub user name
-gitlab_username: mmoreno-cart # your GitLab user name
+gitlab_username: # mmoreno-cart # your GitLab user name
 ieee_id: # your ieeexplore.ieee.org/author/id
 inspirehep_id: # Inspire HEP author ID
 instagram_id: # your instagram id
@@ -249,7 +249,6 @@ exclude:
   - _pages/dropdown.md
   - _pages/profiles.md
   - _pages/publications.md
-  - _pages/repositories.md
   - _pages/teaching.md
   - purgecss.config.js
   - README.md
