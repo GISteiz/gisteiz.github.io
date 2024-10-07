@@ -1,0 +1,8 @@
+main_services:
+  - name: mapping
+    label: Mapping
+    short_description: First service.
+    details: blablabla
+
+other_services:
+
