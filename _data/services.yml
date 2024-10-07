@@ -1,8 +1,22 @@
-main_services:
+main services:
   - name: mapping
     label: Mapping
     short_description: First service.
     details: blablabla
 
-other_services:
+  - name: data_anagement
+    label: Data management
+    short_description: Fourth service.
+
+development:
+
+  - name: python
+    label: Python
+    short_description: Second service.
+
+  - name: javascript
+    label: JavaScript
+    short_description: Third service.
+
+other services:
 
