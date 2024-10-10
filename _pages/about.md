@@ -16,4 +16,7 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Página en construcción.
+
+<br>
+<h1>Página en construcción.</h1>
+Puedes ponerte en contacto a través de los medios al pie de la página.
