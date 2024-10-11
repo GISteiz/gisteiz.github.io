@@ -6,7 +6,7 @@ subtitle: Data. Processing. Visualization.
 
 profile:
   align: right
-  image: png/logo_gisteiz_square.png
+  image: png/logo_square.png
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>_</p>
@@ -25,3 +25,4 @@ social: true # includes social icons at the bottom of the page
 <h5 class="protest">Página en construcción.</h5>
 <h6 class="protest">Página en construcción.</h6>
 Puedes ponerte en contacto a través de los medios al pie de la página.
+<br>
