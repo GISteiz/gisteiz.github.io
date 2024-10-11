@@ -2,8 +2,8 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: blank # the website title (if blank, full name will be used instead)
-first_name: GISteiz
+title: GISteiz # the website title (if blank, full name will be used instead)
+first_name: 
 middle_name:
 last_name:
 email: mmoreno.tp@pm.me

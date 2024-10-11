@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: home
 permalink: /
 subtitle: Data. Processing. Visualization.
 
@@ -18,5 +18,10 @@ social: true # includes social icons at the bottom of the page
 
 
 <br>
-<h1>Página en construcción.</h1>
+<h1 class="protest">Página en construcción.</h1>
+<h2 class="protest">Página en construcción.</h2>
+<h3 class="protest">Página en construcción.</h3>
+<h4 class="protest">Página en construcción.</h4>
+<h5 class="protest">Página en construcción.</h5>
+<h6 class="protest">Página en construcción.</h6>
 Puedes ponerte en contacto a través de los medios al pie de la página.

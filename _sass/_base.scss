@@ -1,3 +1,17 @@
+/****
+Custom fonts
+****/
+
+
+$ps-font-family: "ProtestStrike" !default;
+
+@font-face {
+  font-family: $ps-font-family;
+  src: url("../fonts/ProtestStrike-Regular.woff2") format("woff2")
+}
+
+$main-font-family: $ps-font-family;
+
 /*******************************************************************************
  * Styles for the base elements of the theme.
  ******************************************************************************/
@@ -1301,4 +1315,27 @@ ninja-keys::part(ninja-input-wrapper) {
 ::highlight(search) {
   background-color: var(--global-theme-color);
   color: var(--global-text-color);
+}
+
+
+/************************************************************************
+Custom CSS
+*************************************************************************/
+
+.protest {
+  font-family: "ProtestStrike";
+}
+
+.protest-spaced {
+  font-family: "ProtestStrike";
+  letter-spacing: .05rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "ProtestStrike";
 }
