@@ -2,7 +2,8 @@
 layout: default
 ---
 <div class="post">
-  <header class="post-header">
+  
+  <!--header class="post-header">
     <h1 class="post-title">
       {% if site.title == 'blank' %}
         <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
@@ -12,7 +13,7 @@ layout: default
       {% endif %}
     </h1>
     <p class="desc">{{ page.subtitle }}</p>
-  </header>
+  </header-->
 
   <article>
     {% if page.profile %}
@@ -32,9 +33,12 @@ layout: default
             cache_bust=true
           %}
         {% endif %}
-        {% if page.profile.more_info %}
-          <div class="more-info">{{ page.profile.more_info }}</div>
+        {% if page.subtitle %}
+          <div class="more-info">{{ page.subtitle }}</div>
         {% endif %}
+        <!-- {% if page.profile.more_info %}
+          <div class="more-info">{{ page.profile.more_info }}</div>
+        {% endif %}-->
       </div>
     {% endif %}
 

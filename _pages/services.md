@@ -21,7 +21,7 @@ display_categories: [main services, development, other services]
 
   <div class="services d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
     {% for service in site.data.services[category] %}
-      {% include service/service.liquid service=service %}
+      {% include service.liquid service=service %}
     {% endfor %}
   </div>
   

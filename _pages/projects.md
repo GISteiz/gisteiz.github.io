@@ -2,10 +2,10 @@
 layout: page
 title: projects
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: 
 nav: true
 nav_order: 3
-display_categories: [work, fun]
+display_categories: # [work, fun]
 horizontal: false
 ---
 
@@ -62,4 +62,15 @@ horizontal: false
   </div>
   {% endif %}
 {% endif %}
+</div>
+
+<div class="projects">
+  <h2 class="category">Partners</h2>
+  <div class="container">
+    <div class="row row-cols-1 row-cols-md-4">
+      {% for partner in site.data.partners %}
+        {% include partner.liquid partner=partner %}
+      {% endfor %}
+    </div>
+  </div>
 </div>
