@@ -1,0 +1,12 @@
+<div class="repo repo-gitlab p-2 text-center">
+  <a href="{{ include.repository.web_url }}">
+    <div class="card repo-img-light w-100">
+      <div class="card-body">
+        <h4 class="card-title"><img src="../assets/img/svg/repo_icon.svg" alt="" class="filter-blue">{{ include.repository.path_with_namespace }}</h4>
+        {% if repository.description %}
+          <p class="card-text">{{ include.repository.description }}</p>
+        {% endif %}
+      </div>
+    </div>
+  </a>
+</div>

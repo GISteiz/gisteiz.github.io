@@ -1344,3 +1344,22 @@ h6 {
   padding-top: 0px;
   padding-bottom: 0px;
 }
+
+.repo-gitlab h4 {
+  font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif !important;
+  color: #2f80ed !important;
+  animation: fadeInAnimation 0.8s ease-in-out forwards !important;
+}
+.repo-gitlab h4 img {
+  padding-right: 10px;
+}
+.filter-blue {
+  filter: brightness(0) saturate(100%) invert(56%) sepia(68%) saturate(5458%) hue-rotate(199deg) brightness(97%) contrast(92%);
+}
+.repo-gitlab a:hover {
+  text-decoration: none;
+}
+.repo-gitlab .card {
+  border: 0.5px solid #e4e2e2;
+  box-shadow: none;
+}
