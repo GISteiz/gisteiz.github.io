@@ -6,6 +6,6 @@ github_repos:
   - gisteiz/subvenciones-euskadi
 
 gitlab_repos:
-  - path_with_namespace: mmoreno-cart/docusaurus-2
-    web_url: https://gitlab.com/mmoreno-cart/docusaurus-2
-    description:
+#  - path_with_namespace: mmoreno-cart/docusaurus-2
+#    web_url: https://gitlab.com/mmoreno-cart/docusaurus-2
+#    description:

@@ -1,8 +1,8 @@
 ---
 layout: page
-permalink: /repositories/
-title: repositories
-description: Edit the `_data/repositories.yml` and change the `github_users` and `github_repos` lists to include your own GitHub profile and repositories.
+permalink: /repositorios/
+title: repositorios
+description: Intentamos fomentar el uso de tecnología libre, accede al código de nuestros proyectos y colabora o reutilízalos a tu manera.
 nav: true
 nav_order: 4
 ---
@@ -37,7 +37,7 @@ nav_order: 4
 
 {% if site.data.repositories.github_repos %}
 
-## Repositories
+## GitHub
 
 <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
   {% for repo in site.data.repositories.github_repos %}
@@ -47,6 +47,8 @@ nav_order: 4
 {% endif %}
 
 {% if site.data.repositories.gitlab_repos %}
+
+## GitLab
 
 <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
   {% for repo in site.data.repositories.gitlab_repos %}
