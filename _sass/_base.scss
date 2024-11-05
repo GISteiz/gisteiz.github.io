@@ -1345,6 +1345,22 @@ h6 {
   padding-bottom: 0px;
 }
 
+.button {
+  font-family: "ProtestStrike";
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: white;
+  background: var(--global-theme-color);
+  /* border: black solid 1px; */
+  border-radius: 5px;
+  padding: 5px 30px;
+}
+.button:hover{
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+}
+
 .repo-gitlab h4 {
   font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif !important;
   color: #2f80ed !important;

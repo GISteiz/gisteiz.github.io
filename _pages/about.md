@@ -18,11 +18,12 @@ social: true # includes social icons at the bottom of the page
 
 
 <br>
-<h1 class="protest">Página en construcción.</h1>
-<h2 class="protest">Página en construcción.</h2>
-<h3 class="protest">Página en construcción.</h3>
-<h4 class="protest">Página en construcción.</h4>
-<h5 class="protest">Página en construcción.</h5>
-<h6 class="protest">Página en construcción.</h6>
-Puedes ponerte en contacto a través de los medios al pie de la página.
+<h1 class="protest">Consultoría SIG</h1>
+<p>Con más de 10 años de experiencia en Sistemas de Información Geografica, te ayudamos a sacar el máximo provecho de los datos para tu organización.</p>
+<p></p>
+
+{% if site.email %}
+  <a class="button" href="mailto:{{ site.email | encode_email }}" title="email">Contacta con nosotros</a>
+{% endif %}
+
 <br>
