@@ -1,22 +1,42 @@
-main services:
+Consultoría SIG:
   - name: mapping
-    label: Mapping
-    short_description: First service.
-    details: blablabla
+    label: Cartografía
+    short_description: Diseño y creación de mapas.
+    #details: Preparamos vuestros mapas personalizados y adaptados a vuestras  necesidades.
 
-  - name: data_anagement
-    label: Data management
-    short_description: Fourth service.
+  - name: web_development
+    label: Aplicaciones Web
+    short_description: Desarrollo de aplicaciones web.
 
-development:
+  - name: data_management
+    label: Gestión de datos
+    short_description: Bases de datos y procesamiento.
+
+  - name: mdc
+    label: Recolección de datos	móvil
+    short_description: Apoyo para la recolección de datos con dispositivos móviles.
+
+Tecnologías:
+
+  - name: qgis
+    label: QGIS
+    #short_description: Third service.
+
+  - name: esri
+    label: Esri
+    #short_description: Third service.
+
+  - name: postgis
+    label: PostgreSQL / PostGIS
+    #short_description: Third service.
 
   - name: python
     label: Python
-    short_description: Second service.
+    #short_description: Second service.
 
   - name: javascript
     label: JavaScript
-    short_description: Third service.
+    #short_description: Third service.
 
-other services:
+Otros servicios:
 

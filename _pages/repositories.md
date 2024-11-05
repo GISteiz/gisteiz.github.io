@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /repositorios/
-title: repositorios
+title: Repositorios
 description: Intentamos fomentar el uso de tecnología libre, accede al código de nuestros proyectos y colabora o reutilízalos a tu manera.
 nav: true
 nav_order: 4

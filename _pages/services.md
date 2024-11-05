@@ -1,11 +1,11 @@
 ---
 layout: page
-permalink: /services/
-title: services
+permalink: /servicios/
+title: Servicios
 description: # Services provided by GISteiz
 nav: true
 nav_order: 2
-display_categories: [main services, development, other services]
+display_categories: [Consultoría SIG, Tecnologías, Otros servicios]
 ---
 
 <div class="services">
@@ -19,7 +19,8 @@ display_categories: [main services, development, other services]
     <h2 class="category">{{ category }}</h2>
   </a>
 
-  <div class="services d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
+  <!--div class="services d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center"-->
+  <div class="service row row-cols-1 row-cols-md-3">
     {% for service in site.data.services[category] %}
       {% include service.liquid service=service %}
     {% endfor %}

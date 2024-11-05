@@ -1,7 +1,7 @@
 ---
 layout: page
-title: projects
-permalink: /projects/
+title: Proyectos
+permalink: /proyectos/
 description: 
 nav: true
 nav_order: 3
@@ -65,9 +65,9 @@ horizontal: false
 </div>
 
 <div class="projects">
-  <h2 class="category">Partners</h2>
+  <h2 class="category">Colaboradores</h2>
   <div class="container">
-    <div class="row row-cols-1 row-cols-md-4">
+    <div class="row row-cols-1 row-cols-md-3">
       {% for partner in site.data.partners %}
         {% include partner.liquid partner=partner %}
       {% endfor %}
