@@ -13,11 +13,10 @@ Consultoría SIG:
     short_description: Bases de datos y procesamiento.
 
   - name: mdc
-    label: Recolección de datos	móvil
-    short_description: Apoyo para la recolección de datos con dispositivos móviles.
+    label: Recopilación de datos	móvil
+    short_description: Apoyo para la Recopilación de datos con dispositivos móviles.
 
 Tecnologías:
-
   - name: qgis
     label: QGIS
     #short_description: Third service.
@@ -39,4 +38,3 @@ Tecnologías:
     #short_description: Third service.
 
 Otros servicios:
-

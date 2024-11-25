@@ -2,7 +2,7 @@
 layout: about
 title: GISteiz
 permalink: /
-subtitle: Data. Processing. Visualization.
+subtitle: #Data. Processing. Visualization.
 
 profile:
   align: right
@@ -22,11 +22,6 @@ social: true # includes social icons at the bottom of the page
 <p>Con más de 10 años de experiencia en Sistemas de Información Geografica, te ayudamos a sacar el máximo provecho de los datos para tu organización.</p>
 <p></p>
 
-<code style="font-size: 2em">Página en construcción</code>
-
-{% if site.email %}
-  <a class="button" href="mailto:{{ site.email | encode_email }}" title="email">Contacta con nosotros</a>
-{% endif %}
-
+<code style="font-size: 1.4em">Página en construcción</code>
 
 <br>

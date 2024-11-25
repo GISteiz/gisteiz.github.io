@@ -1321,6 +1321,20 @@ ninja-keys::part(ninja-input-wrapper) {
 /************************************************************************
 Custom CSS
 *************************************************************************/
+:root {
+  --gisteiz-main-color: #1c4da9;
+  --gisteiz-main-color-rgb: 28, 77, 169;
+  --gisteiz-main-color-light: #5082df;
+  --gisteiz-main-color-light-rgb: 80, 130, 223;
+  --gisteiz-light-color: #fcfcf1;
+  --gisteiz-dark-color: #191919;
+
+  --gisteiz-main-color-gradient: linear-gradient(45deg,
+    rgb(var(--main-color-rgb)),
+    rgb(var(--main-color-light-rgb)) 30%,
+    white 60%
+  );
+}
 
 .protest {
   font-family: "ProtestStrike";
@@ -1345,20 +1359,33 @@ h6 {
   padding-bottom: 0px;
 }
 
+.social {
+  margin-top: 180px;
+}
+
 .button {
+  display: block;
+  text-align: center;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
   font-family: "ProtestStrike";
-  font-size: 1.6rem;
   font-weight: 400;
-  color: white;
-  background: var(--global-theme-color);
+  font-size: 1.2rem;
   /* border: black solid 1px; */
+  color: white;
+  border: #191919 solid 2px;
+  background-color: var(--gisteiz-main-color);
+  //background-position: 0;
+  //background-image: var(--main-color-gradient);
   border-radius: 5px;
   padding: 5px 30px;
 }
 .button:hover{
+  background: var(--gisteiz-main-color-light);
+  color: var(--gisteiz-dark-color);
   text-decoration: none;
-  color: white;
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
 
 .repo-gitlab h4 {
