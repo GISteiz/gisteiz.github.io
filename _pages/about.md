@@ -8,14 +8,11 @@ profile:
   align: right
   image: png/logo_square.png
   image_circular: false # crops the image to make it circular
-  more_info: #>
-    #<p>_</p>
-
+  more_info: # more info about the author
 news: true # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
-
 
 <br>
 <h1>Consultoría SIG</h1>

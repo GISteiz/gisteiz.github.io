@@ -2,12 +2,11 @@
 Custom fonts
 ****/
 
-
 $ps-font-family: "ProtestStrike" !default;
 
 @font-face {
   font-family: $ps-font-family;
-  src: url("../fonts/ProtestStrike-Regular.woff2") format("woff2")
+  src: url("../fonts/ProtestStrike-Regular.woff2") format("woff2");
 }
 
 $main-font-family: $ps-font-family;
@@ -633,7 +632,8 @@ footer.sticky-bottom {
 
 // Projects
 
-.projects, .services {
+.projects,
+.services {
   a {
     text-decoration: none;
 
@@ -1319,15 +1319,17 @@ ninja-keys::part(ninja-input-wrapper) {
   color: var(--global-text-color);
 }
 
-
 /************************************************************************
 Custom CSS
 *************************************************************************/
 
 body {
-  background-image: url('../../assets/img/svg/curvas_blanco.svg'), linear-gradient(to right, var(--gisteiz-main-color-light-rgba-40), var(--gisteiz-main-color-light-rgba-20) 80%);
+  background-image: url("../../assets/img/svg/curvas_blanco.svg"),
+    linear-gradient(to right, var(--gisteiz-main-color-light-rgba-40), var(--gisteiz-main-color-light-rgba-20) 80%);
   /*background-size: 100% 100%;*/ /* optional */
-  background-position: right top, center center;
+  background-position:
+    right top,
+    center center;
   background-repeat: no-repeat, repeat;
   /*background-size: 675px 600px, cover;*/
 }
@@ -1338,7 +1340,7 @@ body {
 
 .protest-spaced {
   font-family: "ProtestStrike";
-  letter-spacing: .05rem;
+  letter-spacing: 0.05rem;
 }
 
 h1,
@@ -1389,7 +1391,7 @@ h6 {
   border-radius: 5px;
   padding: 5px 30px;
 }
-.button:hover{
+.button:hover {
   background: var(--gisteiz-light-color);
   color: var(--gisteiz-dark-color);
   text-decoration: none;
@@ -1404,7 +1406,10 @@ h6 {
 }
 
 .repo-gitlab h4 {
-  font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif !important;
+  font:
+    600 18px "Segoe UI",
+    Ubuntu,
+    Sans-Serif !important;
   color: #2f80ed !important;
   animation: fadeInAnimation 0.8s ease-in-out forwards !important;
 }

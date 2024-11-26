@@ -13,9 +13,10 @@ display_categories: [Consultoría SIG, Tecnologías, Otros servicios]
 <code style="font-size: 1.4em">Página en construcción</code>
 
 <!-- Display categorized services -->
+
 {% for category in page.display_categories %}
-  
-  {% if site.data.services[category].size %}
+
+{% if site.data.services[category].size %}
 
   <!--a id="{{ category }}" href=".#{{ category }}"-->
   <h2 id="{{ category }}" class="category">{{ category }}</h2>
@@ -30,8 +31,8 @@ display_categories: [Consultoría SIG, Tecnologías, Otros servicios]
   {% endif %}
   {% if category == 'Tecnologías' %}
     <div class="service row row-cols-1 row-cols-md-6">
-      {% for tecnology in site.data.services[category] %}
-        {% include tecnology.liquid tecnology=tecnology %}
+      {% for technology in site.data.services[category] %}
+        {% include technology.liquid technology=technology %}
       {% endfor %}
     </div>
   {% endif %}
