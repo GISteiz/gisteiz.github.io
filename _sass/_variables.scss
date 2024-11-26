@@ -24,12 +24,6 @@ $gisteiz-main-color-light-rgba-80: rgba($gisteiz-main-color-light, 0.8);
 $gisteiz-light-color: #fcfcf1;
 $gisteiz-dark-color: #191919;
 
-$gisteiz-main-color-gradient: linear-gradient(45deg,
-  rgb(var(--main-color-rgb)),
-  rgb(var(--main-color-light-rgb)) 30%,
-  white 60%
-);
-
 $red-color: #ff3636 !default;
 $red-color-dark: #b71c1c !default;
 $orange-color: #f29105 !default;
