@@ -1325,8 +1325,11 @@ Custom CSS
 *************************************************************************/
 
 body {
-  background-image: linear-gradient(to right, var(--gisteiz-main-color-light-rgba-40), var(--gisteiz-main-color-light-rgba-20) 80%);
-  background-size: 100% 100%; /* optional */
+  background-image: url('../../assets/img/svg/curvas_blanco.svg'), linear-gradient(to right, var(--gisteiz-main-color-light-rgba-40), var(--gisteiz-main-color-light-rgba-20) 80%);
+  /*background-size: 100% 100%;*/ /* optional */
+  background-position: right top, center center;
+  background-repeat: no-repeat, repeat;
+  /*background-size: 675px 600px, cover;*/
 }
 
 .protest {
