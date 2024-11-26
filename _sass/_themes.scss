@@ -5,6 +5,7 @@
 @use "sass:color";
 
 :root {
+
   --gisteiz-main-color: #{$gisteiz-main-color};
   --gisteiz-main-color-rgb: #{$gisteiz-main-color-rgb};
   --gisteiz-main-color-rgba-20: #{$gisteiz-main-color-rgba-20};
@@ -21,7 +22,7 @@
   --gisteiz-main-color-light-rgba-80: #{$gisteiz-main-color-light-rgba-80};
   --gisteiz-light-color: #{$gisteiz-light-color};
   --gisteiz-dark-color: #{$gisteiz-dark-color};
-
+  
   --global-bg-color: #{$white-color};
   --global-code-bg-color: #{$code-bg-color-light};
   --global-text-color: #{$black-color};
