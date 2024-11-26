@@ -7,6 +7,29 @@
 
 // Colors
 $gisteiz-blue: #1c4da9 !default;
+$gisteiz-main-color: #1c4da9;
+$gisteiz-main-color-rgb: 28, 77, 169;
+$gisteiz-main-color-rgba-20: rgba($gisteiz-main-color, 0.2);
+$gisteiz-main-color-rgba-40: rgba($gisteiz-main-color, 0.4);
+$gisteiz-main-color-rgba-50: rgba($gisteiz-main-color, 0.5);
+$gisteiz-main-color-rgba-60: rgba($gisteiz-main-color, 0.6);
+$gisteiz-main-color-rgba-80: rgba($gisteiz-main-color, 0.8);
+$gisteiz-main-color-light: #5082df;
+$gisteiz-main-color-light-rgb: 80, 130, 223;
+$gisteiz-main-color-light-rgba-20: rgba($gisteiz-main-color-light, 0.2);
+$gisteiz-main-color-light-rgba-40: rgba($gisteiz-main-color-light, 0.4);
+$gisteiz-main-color-light-rgba-50: rgba($gisteiz-main-color-light, 0.5);
+$gisteiz-main-color-light-rgba-60: rgba($gisteiz-main-color-light, 0.6);
+$gisteiz-main-color-light-rgba-80: rgba($gisteiz-main-color-light, 0.8);
+$gisteiz-light-color: #fcfcf1;
+$gisteiz-dark-color: #191919;
+
+$gisteiz-main-color-gradient: linear-gradient(45deg,
+  rgb(var(--main-color-rgb)),
+  rgb(var(--main-color-light-rgb)) 30%,
+  white 60%
+);
+
 $red-color: #ff3636 !default;
 $red-color-dark: #b71c1c !default;
 $orange-color: #f29105 !default;
