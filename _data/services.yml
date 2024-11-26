@@ -4,37 +4,61 @@ Consultoría SIG:
     short_description: Diseño y creación de mapas.
     #details: Preparamos vuestros mapas personalizados y adaptados a vuestras  necesidades.
 
-  - name: web_development
-    label: Aplicaciones Web
-    short_description: Desarrollo de aplicaciones web.
-
   - name: data_management
     label: Gestión de datos
     short_description: Bases de datos y procesamiento.
+
+  - name: automation
+    label: Automatización de procesos
+    short_description: Desarrollo de scripts para la optimización de recursos.
+
+  - name: web_development
+    label: Aplicaciones Web
+    short_description: Desarrollo de aplicaciones web.
 
   - name: mdc
     label: Recopilación de datos	móvil
     short_description: Apoyo para la Recopilación de datos con dispositivos móviles.
 
+  - name: training
+    label: Formación SIG
+    short_description: Formación en Sistemas de Información Geografica para empresas.
+
 Tecnologías:
   - name: qgis
     label: QGIS
-    #short_description: Third service.
+    logo: assets/img/svg/qgis.svg
+    url: https://www.qgis.org/
+    #short_description:
 
   - name: esri
     label: Esri
-    #short_description: Third service.
+    logo: assets/img/png/esri.png
+    url: https://www.esri.com/
+    #short_description:
+
+  - name: postgresql
+    label: PostgreSQL
+    logo: assets/img/svg/Postgresql_elephant.svg
+    url: https://www.postgresql.org/
+    #short_description:
 
   - name: postgis
-    label: PostgreSQL / PostGIS
-    #short_description: Third service.
+    label: PostGIS
+    logo: assets/img/png/postgis_logo_square-480.webp
+    url: https://postgis.net/
+    #short_description:
 
   - name: python
     label: Python
-    #short_description: Second service.
+    logo: assets/img/svg/python-logo-only.svg
+    url: https://www.python.org/
+    #short_description:
 
   - name: javascript
     label: JavaScript
-    #short_description: Third service.
+    logo: assets/img/svg/javascript.svg
+    url: https://developer.mozilla.org/es/docs/Web/JavaScript
+    #short_description:
 
 Otros servicios:
