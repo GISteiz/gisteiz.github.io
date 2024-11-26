@@ -33,7 +33,7 @@ Tecnologías:
 
   - name: esri
     label: Esri
-    logo: assets/img/png/esri.png
+    logo: assets/img/svg/esri.svg
     url: https://www.esri.com/
     #short_description:
 
@@ -45,7 +45,7 @@ Tecnologías:
 
   - name: postgis
     label: PostGIS
-    logo: assets/img/png/postgis_logo_square-480.webp
+    logo: assets/img/png/postgis_logo_square.png
     url: https://postgis.net/
     #short_description:
 

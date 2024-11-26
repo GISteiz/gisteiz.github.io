@@ -10,6 +10,8 @@ display_categories: [Consultoría SIG, Tecnologías, Otros servicios]
 
 <div class="services">
 
+<code style="font-size: 1.4em">Página en construcción</code>
+
 <!-- Display categorized services -->
 {% for category in page.display_categories %}
   
