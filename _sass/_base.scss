@@ -1350,9 +1350,21 @@ h6 {
   font-family: "ProtestStrike";
 }
 
+.navbar {
+  background-image: linear-gradient(to top, white, var(--gisteiz-main-color-rgba-20) 90%, var(--gisteiz-main-color-rgba-80) 90%);
+}
+
 .navbar-brand {
   padding-top: 0px;
   padding-bottom: 0px;
+}
+
+.navbar-brand .title-text {
+  font-size: larger;
+  text-decoration-line: underline;
+  text-decoration-thickness: 6px;
+  text-decoration-color: var(--gisteiz-main-color-rgba-80);
+  /*border-bottom: var(--gisteiz-main-color-rgba-80) solid 6px;*/
 }
 
 .social {
