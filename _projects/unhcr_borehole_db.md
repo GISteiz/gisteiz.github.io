@@ -8,5 +8,3 @@ category: work
 related_publications: false
 redirect: https://im.unhcr.org/apps/wash-boreholes-map/ # quitar para acceder a la página de detalle del proyecto
 ---
-
-
