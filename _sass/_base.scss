@@ -1,17 +1,3 @@
-/****
-Custom fonts
-****/
-
-
-$ps-font-family: "ProtestStrike" !default;
-
-@font-face {
-  font-family: $ps-font-family;
-  src: url("../fonts/ProtestStrike-Regular.woff2") format("woff2")
-}
-
-$main-font-family: $ps-font-family;
-
 /*******************************************************************************
  * Styles for the base elements of the theme.
  ******************************************************************************/
@@ -182,7 +168,6 @@ ul.task-list input[type="checkbox"] {
 
 .card {
   background-color: var(--global-card-bg-color);
-  text-align: center;
 
   .card-img {
     width: 100%;
@@ -633,7 +618,7 @@ footer.sticky-bottom {
 
 // Projects
 
-.projects, .services {
+.projects {
   a {
     text-decoration: none;
 
@@ -661,13 +646,12 @@ footer.sticky-bottom {
   }
 
   h2.category {
-    color: var(--gisteiz-dark-color);
-    border-bottom: 1px solid var(--gisteiz-light-color);
+    color: var(--global-divider-color);
+    border-bottom: 1px solid var(--global-divider-color);
     padding-top: 0.5rem;
     margin-top: 2rem;
     margin-bottom: 1rem;
     text-align: right;
-    font-size: 1.6rem;
   }
 }
 
@@ -1317,108 +1301,4 @@ ninja-keys::part(ninja-input-wrapper) {
 ::highlight(search) {
   background-color: var(--global-theme-color);
   color: var(--global-text-color);
-}
-
-
-/************************************************************************
-Custom CSS
-*************************************************************************/
-
-body {
-  background-image: url('../../assets/img/svg/curvas_blanco.svg'), linear-gradient(to right, var(--gisteiz-main-color-light-rgba-40), var(--gisteiz-main-color-light-rgba-20) 80%);
-  /*background-size: 100% 100%;*/ /* optional */
-  background-position: right top, center center;
-  background-repeat: no-repeat, repeat;
-  /*background-size: 675px 600px, cover;*/
-}
-
-.protest {
-  font-family: "ProtestStrike";
-}
-
-.protest-spaced {
-  font-family: "ProtestStrike";
-  letter-spacing: .05rem;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "ProtestStrike";
-}
-
-.navbar {
-  background-image: linear-gradient(to top, white, var(--gisteiz-main-color-rgba-20) 90%, var(--gisteiz-main-color-rgba-80) 90%);
-}
-
-.navbar-brand {
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
-
-.navbar-brand .title-text {
-  font-size: larger;
-  text-decoration-line: underline;
-  text-decoration-thickness: 6px;
-  text-decoration-color: var(--gisteiz-main-color-rgba-80);
-  /*border-bottom: var(--gisteiz-main-color-rgba-80) solid 6px;*/
-}
-
-.social {
-  margin-top: 180px;
-}
-
-.button {
-  display: block;
-  text-align: center;
-  width: 100%;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  font-family: "ProtestStrike";
-  font-weight: 400;
-  font-size: 1.2rem;
-  /* border: black solid 1px; */
-  color: white;
-  border: #191919 solid 2px;
-  background-color: var(--gisteiz-main-color);
-  //background-position: 0;
-  //background-image: var(--main-color-gradient);
-  border-radius: 5px;
-  padding: 5px 30px;
-}
-.button:hover{
-  background: var(--gisteiz-light-color);
-  color: var(--gisteiz-dark-color);
-  text-decoration: none;
-  font-size: 1.2rem;
-}
-
-.technology {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0px 35px;
-}
-
-.repo-gitlab h4 {
-  font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif !important;
-  color: #2f80ed !important;
-  animation: fadeInAnimation 0.8s ease-in-out forwards !important;
-}
-.repo-gitlab h4 img {
-  padding-right: 10px;
-}
-.filter-blue {
-  filter: brightness(0) saturate(100%) invert(56%) sepia(68%) saturate(5458%) hue-rotate(199deg) brightness(97%) contrast(92%);
-}
-.repo-gitlab a:hover {
-  text-decoration: none;
-}
-.repo-gitlab .card {
-  width: 400px;
-  border: 0.5px solid #e4e2e2;
-  box-shadow: none;
 }
