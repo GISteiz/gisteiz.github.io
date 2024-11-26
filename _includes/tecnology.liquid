@@ -1,0 +1,14 @@
+<div class="col technology">
+  <a href="{% if tecnology.redirect %}{{ tecnology.redirect }}{% else %}{{ tecnology.url | relative_url }}{% endif %}">
+    <!-- div class="card h-100 hoverable" -->
+    {% if tecnology.logo %}
+      {% include figure.liquid
+ loading="eager"
+ path=tecnology.logo
+ sizes = "250px"
+ alt=tecnology.label
+ title=tecnology.label
+ class="card-img-top" %}
+    {% endif %}
+  </a>
+</div>

@@ -1,0 +1,13 @@
+<div class="col">
+  <div class="card h-100">
+    <div class="card-body">
+      <h2 class="card-title">{{ service.label }}</h2>
+      <p class="card-text">{{ service.short_description }}</p>
+      <div class="row ml-1 mr-1 p-0">
+        {% if service.details %}
+          <p>{{ service.details  }}</p>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
