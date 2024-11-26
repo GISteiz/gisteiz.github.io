@@ -11,6 +11,10 @@ horizontal: false
 
 <!-- pages/projects.md -->
 <div class="projects">
+
+<code style="font-size: 1.4em">Página en construcción</code>
+<p></p>
+
 {% if site.enable_project_categories and page.display_categories %}
   <!-- Display categorized projects -->
   {% for category in page.display_categories %}
@@ -67,7 +71,7 @@ horizontal: false
 <div class="projects">
   <h2 class="category">Colaboradores</h2>
   <div class="container">
-    <div class="row row-cols-1 row-cols-md-3">
+    <div class="row row-cols-1 row-cols-md-5">
       {% for partner in site.data.partners %}
         {% include partner.liquid partner=partner %}
       {% endfor %}

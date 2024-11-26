@@ -1,11 +1,12 @@
 ---
 layout: page
 title: Subvenciones en Euskadi
-description: Visor de datos obtenidos de la API de subvenciones concedidas del portal Open Data Euskadi.
+description: Visualizador de datos obtenidos de la API de subvenciones concedidas del portal Open Data Euskadi.
 img: https://gisteiz.github.io/subvenciones-euskadi/portada.png
 importance: 1
 category: work
 related_publications: false
+redirect: https://gisteiz.github.io/subvenciones-euskadi/ # quitar para acceder a la página de detalle del proyecto
 ---
 
 <div class="row">
@@ -14,7 +15,7 @@ related_publications: false
     </div>
 </div>
 <div class="caption">
-    <a href="https://gisteiz.github.io/subvenciones-euskadi/" target="_blank">Enlace al visor de datos</a>
+    <a href="https://gisteiz.github.io/subvenciones-euskadi/" target="_blank">Enlace al visualizador de datos</a>
 </div>
 
 Fuente de datos: <a href="https://opendata.euskadi.eus/api-granted-benefits/?api=granted-benefit/" target="_blank">Open Data Euskadi</a>

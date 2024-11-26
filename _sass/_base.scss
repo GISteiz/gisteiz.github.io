@@ -1381,6 +1381,13 @@ h6 {
   font-size: 1.2rem;
 }
 
+.technology {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 35px;
+}
+
 .repo-gitlab h4 {
   font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif !important;
   color: #2f80ed !important;

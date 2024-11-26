@@ -1,6 +1,6 @@
 ---
 layout: about
-title: GISteiz
+title: Portada
 permalink: /
 subtitle: #Data. Processing. Visualization.
 
