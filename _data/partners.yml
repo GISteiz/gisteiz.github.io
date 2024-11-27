@@ -5,16 +5,16 @@
 #  details: blablabla
 #  url:
 
-#- name: cartong
-#  label: CartONG
-#  logo: assets/img/svg/CartONG_logo_sans.svg
-#  short_description:
-#  details: blablabla
-#  url: https://www.cartong.org/en/
+- name: cartong
+  label: CartONG
+  logo: assets/img/svg/CartONG_logo_vertical.svg
+  short_description:
+  #details: blablabla
+  url: https://www.cartong.org/en/
 
 - name: gisteria
   label: La Gisteria
   logo: assets/img/svg/lagisteria_vertical.svg
   short_description:
-  details: blablabla3
+  #details: blablabla3
   url: https://www.lagisteria.com/

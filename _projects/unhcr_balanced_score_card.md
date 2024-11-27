@@ -7,4 +7,5 @@ importance: 2
 category: work
 related_publications: false
 redirect: https://im.unhcr.org/apps/ph-bsc-dashboard/ # quitar para acceder a la página de detalle del proyecto
+note: Como parte del equipo de CartONG
 ---
