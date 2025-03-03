@@ -1411,6 +1411,14 @@ h6 {
   padding: 0px 35px;
 }
 
+.technology .card-img-top {
+  max-width: 100px;
+}
+
+.partner .card-img-top {
+  max-width: 120px;
+}
+
 .repo-gitlab h4 {
   font:
     600 18px "Segoe UI",
