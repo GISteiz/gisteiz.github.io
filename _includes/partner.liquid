@@ -3,18 +3,16 @@
     <div class="card h-100 hoverable">
       <div class="card-body">
         {% if partner.logo %}
-          {%
-            include figure.liquid loading="eager" path=partner.logo sizes = "250px" alt=partner.label title=partner.label class="card-img-top"
-          %}
+          {% include figure.liquid loading="eager" path=partner.logo sizes = "250px" alt=partner.label title=partner.label class="card-img-top" %}
         {% endif %}
-      <!--
-        <h2 class="card-title">{{ partner.label }}</h2>  <p class="card-text">{{ partner.short_description }}</p>
-              <div class="row ml-1 mr-1 p-0">
-                {% if partner.details %}
-                  <p>{{ partner.details }}</p>
-                {% endif %}
-              </div>
-      -->
+        <!--
+          <h2 class="card-title">{{ partner.label }}</h2>  <p class="card-text">{{ partner.short_description }}</p>
+          <div class="row ml-1 mr-1 p-0">
+            {% if partner.details %}
+              <p>{{ partner.details }}</p>
+            {% endif %}
+          </div>
+        -->
       </div>
     </div>
   </a>
