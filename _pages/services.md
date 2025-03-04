@@ -32,7 +32,9 @@ display_categories: [Consultoría SIG, Tecnologías, Otros servicios]
   {% if category == 'Tecnologías' %}
     <div class="service row row-cols-1 row-cols-md-6">
       {% for technology in site.data.services[category] %}
-        {% include technology.liquid technology=technology %}
+        {% if technology.hide_in_services != true %}
+          {% include technology.liquid technology=technology %}
+        {% endif %}
       {% endfor %}
     </div>
   {% endif %}

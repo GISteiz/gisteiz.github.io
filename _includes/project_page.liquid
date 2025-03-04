@@ -1,0 +1,112 @@
+{% assign technologies = include.technologies | split: ',' %}
+
+<div class="project-detail">
+
+  <div class="row">
+    <div class="col-sm">
+      <div class="col project-info">
+        <h5>
+          Resumen
+          <span style="float:right">
+            <i class="fa-solid fa-info"></i>
+          </span>
+        </h5>
+
+        <p>
+          {% if include.client %}
+            Trabajo realizado para
+            <span style="font-weight:bold">{{ include.client }}</span>
+          {% endif %}
+          {% if include.date %}
+            |
+            <small>{{ include.date }}</small>
+          {% endif %}
+        </p>
+
+        <div class="row">
+          <div class="col-sm-8">
+            {% if include.description %}
+              <p>{{ include.description }}</p>
+            {% endif %}
+            {% if include.partners %}
+              <p>
+                Colaboración con {{ include.partners }}
+              </p>
+            {% endif %}
+          </div>
+          <div class="col-sm-4">
+            {% if include.technologies %}
+              <p class="text-right">
+                {% for technology in technologies %}
+                  {% for item in site.data.services["Tecnologías"] %}
+                    {% if item.name == technology %}
+                      <a href="{{ item.url }}" target="_blank">
+                        <span class="badge badge-{{ technology | downcase  }} font-weight-bold align-middle" style="min-width: 75px">
+                          {{ item.label }}
+                        </span>
+                      </a>
+                    {% endif %}
+                  {% endfor %}
+
+                {% endfor %}
+              </p>
+            {% endif %}
+            {% if include.url %}
+              <a
+                class="hoverable button"
+                href="{{ include.url }}"
+                target="_blank">
+                Enlace al proyecto
+              </a>
+            {% endif %}
+          </div>
+        </div>
+
+        {% if include.note %}
+          <i>
+            <small>{{ include.note }}</small>
+          </i>
+        {% endif %}
+
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm">
+      <!-- div class="col-sm mt-3 mt-md-0" -->
+      {% include figure.liquid loading="eager" path=include.img title=include.title class="img-fluid rounded z-depth-1" %}
+    </div>
+  </div>
+
+  <div class="row">
+    {% if include.problematic %}
+      <div class="col-sm">
+        <div class="col project-info">
+          <h3>Problemática
+            <span style="float:right">
+              <!-- i class="fa-regular fa-circle-question"></i -->
+              <i class="fa-regular fa-face-rolling-eyes"></i>
+            </span>
+          </h3>
+          {{ include.problematic }}
+        </div>
+      </div>
+    {% endif %}
+    {% if include.solution %}
+      <div class="col-sm">
+        <div class="col project-info">
+          <h3>Solución
+            <span style="float:right">
+              <!-- i class="fa-regular fa-lightbulb"></i -->
+              <i class="fa-regular fa-face-laugh-beam"></i>
+            </span>
+          </h3>
+          {{ include.solution }}
+        </div>
+      </div>
+    {% endif %}
+  </div>
+
+  <p>{{ include.attribution }}</p>
+</div>

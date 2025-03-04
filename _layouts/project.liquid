@@ -1,0 +1,33 @@
+---
+layout: default
+---
+{% if page._styles %}
+  <!-- Page/Post style -->
+  <style type="text/css">
+    {{ page._styles }}
+  </style>
+{% endif %}
+
+<div class="post">
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+  <!-- p class="post-description">{{ page.description }}</p -->
+  </header>
+
+  <article>
+    {% include project_page.liquid description=page.description  img=page.img  url=page.link  client=page.client partners=page.partners date=page.date technologies=page.technologies note=page.note  problematic=page.problematic solution=page.solution attribution=page.attribution
+    %}
+    {{ content }}
+  </article>
+
+  {% if page.related_publications %}
+    <h2>References</h2>
+    <div class="publications">
+      {% bibliography --cited_in_order %}
+    </div>
+  {% endif %}
+
+  {% if site.giscus and page.giscus_comments %}
+    {% include giscus.liquid %}
+  {% endif %}
+</div>
