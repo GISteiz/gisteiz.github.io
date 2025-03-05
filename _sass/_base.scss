@@ -1381,6 +1381,12 @@ h6 {
   /*border-bottom: var(--gisteiz-main-color-rgba-80) solid 6px;*/
 }
 
+.project-detail a {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
 .social {
   margin-top: 180px;
 }
