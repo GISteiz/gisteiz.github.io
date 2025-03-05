@@ -3,13 +3,23 @@ Custom fonts
 ****/
 
 $ps-font-family: "ProtestStrike" !default;
-
 @font-face {
   font-family: $ps-font-family;
   src: url("../fonts/ProtestStrike-Regular.woff2") format("woff2");
 }
-
 $main-font-family: $ps-font-family;
+
+$roboto-font-family: "RobotoVariable" !default;
+@font-face {
+  font-family: $roboto-font-family;
+  src: url("../fonts/Roboto-VariableFont.woff") format("woff");
+}
+
+$montserratregular-font-family: "MontserratRegular" !default;
+@font-face {
+  font-family: $montserratregular-font-family;
+  src: url("../fonts/Montserrat-Regular.woff2") format("woff2");
+}
 
 /*******************************************************************************
  * Styles for the base elements of the theme.
@@ -1332,13 +1342,15 @@ body {
     center center;
   background-repeat: no-repeat, repeat;
   /*background-size: 675px 600px, cover;*/
+  font-family: "MontserratRegular", "RobotoVariable", sans-serif;
+  /*font-weight: 600 !important;*/
 }
 
-.protest {
+.font-protest {
   font-family: "ProtestStrike";
 }
 
-.protest-spaced {
+.font-protest-spaced {
   font-family: "ProtestStrike";
   letter-spacing: 0.05rem;
 }
@@ -1379,7 +1391,8 @@ h6 {
   font-style: italic;
 }
 
-.button {
+/*
+.profile .custom-button {
   display: block;
   text-align: center;
   width: 100%;
@@ -1388,7 +1401,6 @@ h6 {
   font-family: "ProtestStrike";
   font-weight: 400;
   font-size: 1.2rem;
-  /* border: black solid 1px; */
   color: white;
   border: #191919 solid 2px;
   background-color: var(--gisteiz-main-color);
@@ -1397,11 +1409,32 @@ h6 {
   border-radius: 5px;
   padding: 5px 30px;
 }
-.button:hover {
+.profile .custom-button:hover {
   background: var(--gisteiz-light-color);
   color: var(--gisteiz-dark-color);
   text-decoration: none;
   font-size: 1.2rem;
+}
+*/
+
+.badge {
+  background-color: #c00;
+}
+/*a.badge:hover {
+  text-decoration: none;
+}*/
+.badge.badge-javascript {
+  background-color: #f0db50;
+  color: #323233 !important;
+}
+.badge.badge-kobotoolbox {
+  background-color: #229af6;
+}
+.badge.badge-esri {
+  background-color: #0899f1;
+}
+.badge.badge-observablehq {
+  background-color: #161616;
 }
 
 .technology {
@@ -1417,6 +1450,50 @@ h6 {
 
 .partner .card-img-top {
   max-width: 120px;
+}
+
+.project-detail .project-info {
+  /*margin: 0.5rem;*/
+  margin-bottom: 1.2rem;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  border-radius: 0.25rem !important;
+  background: #ffffff47;
+  box-shadow:
+    0 2px 5px 0 rgba(0, 0, 0, 0.16),
+    0 2px 10px 0 rgba(0, 0, 0, 0.12) !important;
+}
+
+.custom-button {
+  margin-bottom: 15px;
+  font-family: "ProtestStrike";
+  font-size: 1rem;
+  /*color: #fff;*/
+  color: var(--gisteiz-dark-color);
+  /*background-color: var(--gisteiz-main-color);*/
+  background-color: var(--gisteiz-light-color);
+  border-radius: 0.25rem;
+  padding: 5px 30px;
+  float: right;
+  text-align: center;
+}
+
+.custom-button.hoverable:hover {
+  -webkit-box-shadow:
+    0 4px 6px 0 rgba(0, 0, 0, 0.2),
+    0 3px 6px 0 rgba(0, 0, 0, 0.19);
+  box-shadow:
+    0 4px 6px 0 rgba(0, 0, 0, 0.2),
+    0 3px 6px 0 rgba(0, 0, 0, 0.19);
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.custom-button:hover {
+  /*background: var(--gisteiz-light-color);*/
+  /*color: var(--gisteiz-dark-color);*/
+  color: var(--global-theme-color);
+  text-decoration: none;
+  /*font-size: 1.05rem;*/
 }
 
 .repo-gitlab h4 {
