@@ -1,5 +1,6 @@
 ---
 layout: project
+parent_url: /proyectos
 title: Subvenciones en Euskadi
 description: Visualizador de datos obtenidos de la API de subvenciones concedidas del portal Open Data Euskadi.
 img: https://gisteiz.github.io/subvenciones-euskadi/portada.png
@@ -9,14 +10,16 @@ related_publications: false
 #redirect: https://gisteiz.github.io/subvenciones-euskadi/ # quitar para acceder a la página de detalle del proyecto
 note: #Como parte del equipo de CartONG
 link: https://gisteiz.github.io/subvenciones-euskadi/
-client: Concurso OpenData Euskadi  
-partners: 
+client: Concurso OpenData Euskadi
+partners:
 project_date: 2024
 technologies: observablehq,javascript
-problematic: #>
+problematic:
+  #>
   #<p>Texto de la problematica</p>
   #<p>Otro parrafo</p>
-solution: #>
+solution:
+  #>
   #<p>Texto de la solucion</p>
 attribution: >
   Fuente de datos:

@@ -61,16 +61,16 @@ Tecnologías:
     url: https://developer.mozilla.org/es/docs/Web/JavaScript
     #short_description:
     hide_in_services: false
-      
+
   - name: kobotoolbox
     label: KoboToolbox
     logo: assets/img/svg/kobotoolbox_logo_default_for-light-bg.svg
     url: https://kobotoolbox.org/
     hide_in_services: true
-      
+
   - name: observablehq
     label: Observable Framework
-    logo: 
+    logo:
     url: https://observablehq.com/framework/
     hide_in_services: true
 

@@ -1,7 +1,6 @@
 {% assign technologies = include.technologies | split: ',' %}
 
 <div class="project-detail">
-
   <div class="row">
     <div class="col-sm">
       <div class="col project-info">
@@ -29,16 +28,14 @@
               <p>{{ include.description }}</p>
             {% endif %}
             {% if include.partners %}
-              <p>
-                Colaboración con {{ include.partners }}
-              </p>
+              <p>Colaboración con {{ include.partners }}</p>
             {% endif %}
           </div>
           <div class="col-sm-4">
             {% if include.technologies %}
               <p class="text-right">
                 {% for technology in technologies %}
-                  {% for item in site.data.services["Tecnologías"] %}
+                  {% for item in site.data.services['Tecnologías'] %}
                     {% if item.name == technology %}
                       <a href="{{ item.url }}" target="_blank">
                         <span class="badge badge-{{ technology | downcase  }} font-weight-bold align-middle" style="min-width: 75px">
@@ -47,15 +44,15 @@
                       </a>
                     {% endif %}
                   {% endfor %}
-
                 {% endfor %}
               </p>
             {% endif %}
             {% if include.url %}
               <a
-                class="hoverable button"
+                class="hoverable custom-button"
                 href="{{ include.url }}"
-                target="_blank">
+                target="_blank"
+              >
                 Enlace al proyecto
               </a>
             {% endif %}
@@ -67,7 +64,6 @@
             <small>{{ include.note }}</small>
           </i>
         {% endif %}
-
       </div>
     </div>
   </div>
@@ -79,34 +75,55 @@
     </div>
   </div>
 
-  <div class="row">
-    {% if include.problematic %}
-      <div class="col-sm">
-        <div class="col project-info">
-          <h3>Problemática
-            <span style="float:right">
-              <!-- i class="fa-regular fa-circle-question"></i -->
-              <i class="fa-regular fa-face-rolling-eyes"></i>
-            </span>
-          </h3>
-          {{ include.problematic }}
+  {% if include.problematic or include.solution %}
+    <div class="row">
+      {% if include.problematic %}
+        <div class="col-sm">
+          <div class="col project-info">
+            <h3>
+              Problemática
+              <span style="float:right">
+                <!-- i class="fa-regular fa-circle-question"></i -->
+                <i class="fa-regular fa-face-rolling-eyes"></i>
+              </span>
+            </h3>
+            {{ include.problematic }}
+          </div>
         </div>
-      </div>
-    {% endif %}
-    {% if include.solution %}
-      <div class="col-sm">
-        <div class="col project-info">
-          <h3>Solución
-            <span style="float:right">
-              <!-- i class="fa-regular fa-lightbulb"></i -->
-              <i class="fa-regular fa-face-laugh-beam"></i>
-            </span>
-          </h3>
-          {{ include.solution }}
+      {% endif %}
+      {% if include.solution %}
+        <div class="col-sm">
+          <div class="col project-info">
+            <h3>
+              Solución
+              <span style="float:right">
+                <!-- i class="fa-regular fa-lightbulb"></i -->
+                <i class="fa-regular fa-face-laugh-beam"></i>
+              </span>
+            </h3>
+            {{ include.solution }}
+          </div>
         </div>
-      </div>
-    {% endif %}
-  </div>
+      {% endif %}
+    </div>
+  {% endif %}
 
-  <p>{{ include.attribution }}</p>
+  {% if include.attribution %}
+    <div class="row">
+      <div class="col">
+        <p>{{ include.attribution }}</p>
+      </div>
+    </div>
+  {% endif %}
+
+  {% if page.parent_url %}
+    <div class="row">
+      <div class="col">
+        <a class="hoverable custom-button" href="{{ page.parent_url }}">
+          <i class="fa-solid fa-chevron-left"></i>
+          Volver a proyectos
+        </a>
+      </div>
+    </div>
+  {% endif %}
 </div>
