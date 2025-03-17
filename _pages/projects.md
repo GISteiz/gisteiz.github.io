@@ -14,7 +14,11 @@ horizontal: false
 
   <code style="font-size: 1.4em">Página en construcción</code>
 
-  <p></p>
+  <div class="row projects-intro">
+    <div class="col text-right">
+      <a href="/lista_proyectos/">Ver listado completo de proyectos <i class="fa-solid fa-list-ul"></i></a>
+    </div>
+  </div>
 
   {% if site.enable_project_categories and page.display_categories %}
 
@@ -50,7 +54,8 @@ horizontal: false
 
   <!-- Display projects without categories -->
 
-    {% assign sorted_projects = site.projects | sort: "importance" %}
+    {% assign filtered_projects = site.projects | where_exp: "item", "item.list_only != true" %}
+    {% assign sorted_projects = filtered_projects | sort: "importance" %}
 
   <!-- Generate cards for each project -->
 
@@ -72,6 +77,8 @@ horizontal: false
   {% endif %}
 
 </div>
+
+<!-- Partners -->
 
 <div class="projects">
   <h2 class="category">Colaboradores</h2>
