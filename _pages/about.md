@@ -16,7 +16,7 @@ social: true # includes social icons at the bottom of the page
 
 <br>
 <h1>Consultoría SIG</h1>
-<p>Con más de 10 años de experiencia en Sistemas de Información Geografica, te ayudamos a sacar el máximo provecho de los datos para tu organización.</p>
+<p class="introduction">Con más de 10 años de experiencia en Sistemas de Información Geografica, te ayudamos a sacar el máximo provecho de los datos para tu organización.</p>
 <p></p>
 
 <code style="font-size: 1.4em">Página en construcción</code>

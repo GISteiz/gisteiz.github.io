@@ -15,10 +15,16 @@ $roboto-font-family: "RobotoVariable" !default;
   src: url("../fonts/Roboto-VariableFont.woff") format("woff");
 }
 
-$montserratregular-font-family: "MontserratRegular" !default;
+$montserratregular-font-family: "Montserrat Regular" !default;
 @font-face {
   font-family: $montserratregular-font-family;
   src: url("../fonts/Montserrat-Regular.woff2") format("woff2");
+}
+
+$nunitosans-font-family: "Nunito Sans" !default;
+@font-face {
+  font-family: $nunitosans-font-family;
+  src: url("../fonts/NunitoSans-VariableFont.woff2") format("woff2");
 }
 
 /*******************************************************************************
@@ -1342,7 +1348,7 @@ body {
     center center;
   background-repeat: no-repeat, repeat;
   /*background-size: 675px 600px, cover;*/
-  font-family: "MontserratRegular", "RobotoVariable", sans-serif;
+  font-family: "Nunito Sans", "Montserrat Regular", "RobotoVariable", sans-serif;
   /*font-weight: 600 !important;*/
 }
 
@@ -1365,7 +1371,8 @@ h6 {
 }
 
 .navbar {
-  background-image: linear-gradient(to top, white, var(--gisteiz-main-color-rgba-20) 90%, var(--gisteiz-main-color-rgba-80) 90%);
+  /*background-image: linear-gradient(to top, white, var(--gisteiz-main-color-rgba-20) 90%, var(--gisteiz-main-color-rgba-80) 90%);*/
+  border-top: var(--gisteiz-main-color-rgba-80) solid 0.4rem;
 }
 
 .navbar-brand {
@@ -1423,6 +1430,10 @@ h6 {
 }
 */
 
+.introduction {
+  font-size: 1.4rem;
+}
+
 .badge {
   background-color: #c00;
 }
@@ -1464,7 +1475,7 @@ h6 {
   padding-top: 1rem;
   padding-bottom: 0.5rem;
   border-radius: 0.25rem !important;
-  background: #ffffff47;
+  background: hsla(0, 0%, 100%, .5);
   box-shadow:
     0 2px 5px 0 rgba(0, 0, 0, 0.16),
     0 2px 10px 0 rgba(0, 0, 0, 0.12) !important;
