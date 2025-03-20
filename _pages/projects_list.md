@@ -23,7 +23,14 @@ nav: false
 
   <div class="container">
     <div class="row row-cols-1 row-cols-md-1">
+    {% assign last_year = "" %}
     {% for project in sorted_projects %}
+      {% assign current_year = project.project_date | slice: 0, 4 %}
+      {% if last_year != current_year or last_year == "" %}
+        {% assign last_year = project.project_date | slice: 0, 4 %}
+        <h2>{{ last_year }}</h2>
+      {% endif %}
+
       <div class="card h-100 project_list_item">
         <div class="col">
           <p>
