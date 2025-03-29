@@ -715,8 +715,10 @@ footer.sticky-bottom {
   }
 
   h2.category {
-    color: var(--gisteiz-dark-color);
-    border-bottom: 1px solid var(--gisteiz-light-color);
+    /*color: var(--gisteiz-dark-color);*/
+    color: var(--global-divider-color);
+    /*border-bottom: 1px solid var(--gisteiz-light-color);*/
+    border-bottom: 1px solid var(--global-divider-color);
     padding-top: 0.5rem;
     margin-top: 2rem;
     margin-bottom: 1rem;
@@ -1574,9 +1576,11 @@ h6 {
 }
 .badge.badge-kobotoolbox {
   background-color: #229af6;
+  color: #323233 !important;
 }
 .badge.badge-esri {
   background-color: #0899f1;
+  color: #323233 !important;
 }
 .badge.badge-observablehq {
   background-color: #161616;
