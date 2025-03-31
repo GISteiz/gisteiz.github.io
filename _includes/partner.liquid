@@ -3,7 +3,12 @@
     <div class="card h-100 hoverable">
       <div class="card-body">
         {% if partner.logo %}
-          {% include figure.liquid loading="eager" path=partner.logo sizes = "250px" alt=partner.label title=partner.label class="card-img-top" %}
+          {% include figure.liquid loading="eager" path=partner.logo sizes = "250px" alt=partner.label title=partner.label class="card-img-top only-light" %}
+          {% if partner.logo_dark %}
+            {% include figure.liquid loading="eager" path=partner.logo_dark sizes = "250px" alt=partner.label title=partner.label class="card-img-top only-dark" %}
+          {% else %}
+            {% include figure.liquid loading="eager" path=partner.logo sizes = "250px" alt=partner.label title=partner.label class="card-img-top only-dark" %}
+          {% endif %}
         {% endif %}
         <!--
           <h2 class="card-title">{{ partner.label }}</h2>  <p class="card-text">{{ partner.short_description }}</p>
