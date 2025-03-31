@@ -41,14 +41,16 @@ nav: false
             </span> 
             <span class="">
               {{ project.project_date }}
-            </span> | 
-            <span class="">
-              {{ project.client }}
             </span>
+            {% if project.client %}
+            <span class="">
+               | {{ project.client }}
+            </span>
+            {% endif %}
             {% if project.technologies %}
+              | 
               {% assign technologies = project.technologies | split: ',' %}
-
-              <span class="text-right"> | 
+              <span class="text-right"> 
                 {% for technology in technologies %}
                   {% for item in site.data.services['Tecnologías'] %}
                     {% if item.name == technology %}
