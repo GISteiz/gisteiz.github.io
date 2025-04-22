@@ -8,6 +8,7 @@
 - name: cartong
   label: CartONG
   logo: assets/img/svg/CartONG_logo_vertical.svg
+  logo_dark: assets/img/svg/CartONG_logo_vertical_blanc.svg
   short_description:
   #details: blablabla
   url: https://www.cartong.org/en/
@@ -15,6 +16,7 @@
 - name: gisteria
   label: La Gisteria
   logo: assets/img/svg/lagisteria_vertical.svg
+  logo_dark: assets/img/svg/lagisteria_vertical_dark.svg
   short_description:
   #details: blablabla3
   url: https://www.lagisteria.com/
