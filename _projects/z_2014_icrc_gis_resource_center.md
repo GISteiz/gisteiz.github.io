@@ -8,9 +8,9 @@ client: ICRC
 technologies: javascript
 list_only: true
 category: work
-description: Web de productos y servicios ofrecidos por el equipo SIG del Comité Internacional de la Cruz Roja (CICR). 
+description: Web de productos y servicios ofrecidos por el equipo SIG del Comité Internacional de la Cruz Roja (CICR).
 img: assets/img/png/projects/icrc_gis_resource_center.png
-importance: 
+importance:
 redirect: # quitar para acceder a la página de detalle del proyecto
 note: Como parte del equipo de SIG del CICR
 partners:

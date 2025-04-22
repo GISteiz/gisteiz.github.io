@@ -11,7 +11,7 @@ nav: false
 <!-- pages/projects.md -->
 <div class="projects">
 
-  <code style="font-size: 1.4em">Página en construcción</code>
+<code style="font-size: 1.4em">Página en construcción</code>
 
   <div class="row projects-intro">
     <div class="col text-right">
@@ -37,8 +37,8 @@ nav: false
             <span class="project_list_item_title">
               <a href="{{ project.url | relative_url }}">
                 {{ project.title }}
-              </a> | 
-            </span> 
+              </a> |
+            </span>
             <span class="">
               {{ project.project_date }}
             </span>
@@ -48,9 +48,9 @@ nav: false
             </span>
             {% endif %}
             {% if project.technologies %}
-              | 
+              |
               {% assign technologies = project.technologies | split: ',' %}
-              <span class="text-right"> 
+              <span class="text-right">
                 {% for technology in technologies %}
                   {% for item in site.data.services['Tecnologías'] %}
                     {% if item.name == technology %}
@@ -69,9 +69,8 @@ nav: false
       </div>
     {% endfor %}
     </div>
+
   </div>
-
-
 
 </div>
 
@@ -87,4 +86,3 @@ nav: false
     </div>
   </div>
 </div>
-

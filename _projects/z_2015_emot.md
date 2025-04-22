@@ -2,15 +2,15 @@
 layout: project
 parent_url: /proyectos
 title: Events Monitoring Tool
-link: 
+link:
 project_date: 2015
-client: 
+client:
 technologies: javascript
 list_only: true
 category: work
-description: Herramienta de monitorización de eventos violentos en Ucrania (2014-2015). 
+description: Herramienta de monitorización de eventos violentos en Ucrania (2014-2015).
 img: assets/img/png/projects/emot.png
-importance: 
+importance:
 redirect: # quitar para acceder a la página de detalle del proyecto
 note: Colaboración en el mantenimiento y desarrollo de funcionalidades.
 partners:

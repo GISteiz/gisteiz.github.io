@@ -12,7 +12,7 @@ horizontal: false
 <!-- pages/projects.md -->
 <div class="projects">
 
-  <code style="font-size: 1.4em">Página en construcción</code>
+<code style="font-size: 1.4em">Página en construcción</code>
 
   <div class="row projects-intro">
     <div class="col text-right">
@@ -20,7 +20,7 @@ horizontal: false
     </div>
   </div>
 
-  {% if site.enable_project_categories and page.display_categories %}
+{% if site.enable_project_categories and page.display_categories %}
 
   <!-- Display categorized projects -->
 
@@ -33,6 +33,7 @@ horizontal: false
       {% assign sorted_projects = categorized_projects | sort: "importance" %}
 
   <!-- Generate cards for each project -->
+
       {% if page.horizontal %}
         <div class="container">
           <div class="row row-cols-1 row-cols-md-2">
@@ -50,7 +51,7 @@ horizontal: false
       {% endif %}
     {% endfor %}
 
-  {% else %}
+{% else %}
 
   <!-- Display projects without categories -->
 
@@ -74,7 +75,8 @@ horizontal: false
         {% endfor %}
       </div>
     {% endif %}
-  {% endif %}
+
+{% endif %}
 
 </div>
 
@@ -90,4 +92,3 @@ horizontal: false
     </div>
   </div>
 </div>
-
