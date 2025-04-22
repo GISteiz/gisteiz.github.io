@@ -16,7 +16,7 @@ horizontal: false
 
   <div class="row projects-intro">
     <div class="col text-right">
-      <a href="/lista_proyectos/">Ver listado completo de proyectos <i class="fa-solid fa-list-ul"></i></a>
+      <!-- <a href="/lista_proyectos/">Ver listado completo de proyectos <i class="fa-solid fa-list-ul"></i></a> -->
     </div>
   </div>
 
